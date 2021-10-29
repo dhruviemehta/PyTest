@@ -22,12 +22,12 @@
     pytest -m <markername> -v
 
 ## Fixture the tests
-* Fixtures are used to feed some data to the tests
+#### Fixtures are used to feed some data to the tests
     import pytest
     @pytest.fixture
 
 ## make fixtures accessible across multiple test files
-* create conftest.py file
+#### create conftest.py file
     import pytest
     @pytest.fixture
 
@@ -47,9 +47,9 @@
     pytest --maxfail = <num>
 
 ## Run Tests in Parallel
-* install pytest-xdist
+#### install pytest-xdist
     pip install pytest-xdist
-* run tests parallely
+#### run tests parallely
     pytest -n 3
 
 ## generate the details of the test execution in an xml file
